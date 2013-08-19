@@ -2,21 +2,4 @@ $backgroundColor: #2f3439;
 
 body {
 	background-color: $backgroundColor;
-
-	a.gh {
-		font-family: "Georgia";
-		font-size: 26px;
-		line-height: 32px;
-		color: white;
-		background: url(../images/github-logo.png) no-repeat right center;
-		padding-right: 40px;
-		text-decoration: none;
-		display:inline-block;
-		position: absolute;
-		bottom: 10%;
-		left: 50%;
-		margin-left: -110px;
-		-webkit-font-smoothing: antialiased;
-		font-weight: lighter;
-	}
 }
