@@ -20,3 +20,5 @@ compass watch
 cd build/
 ruby haml_watch.rb .
 ```
+### Demo
+[http://juancabrera.github.io/radial-timer/](http://juancabrera.github.io/radial-timer/)
