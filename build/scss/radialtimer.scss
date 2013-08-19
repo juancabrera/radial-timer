@@ -1,0 +1,62 @@
+$radialBarColor: #6BC967;
+$timerColor: rgba(255, 255, 255, 0.8);
+$fontColor: #888;
+$fontFamily: "Georgia";
+$backgroundTimerColor: white;
+$sizeTimer: 200px;
+$borderWidth: 15px;
+$fontSize: 70px;
+
+.timer {
+	width: $sizeTimer;
+	height: $sizeTimer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -1 * ($sizeTimer / 2) 0 0 -1 * ($sizeTimer / 2);
+
+	.n {
+		position: absolute;
+		width: $sizeTimer;
+		height: $sizeTimer;
+		background: $backgroundTimerColor;
+		border-radius: 50%;
+		text-align: center;
+		line-height: $sizeTimer;
+		font-family: $fontFamily;
+		font-size: $fontSize;
+		color: $fontColor;
+	}
+
+	.slice {
+		position: absolute;
+		width: $sizeTimer;
+		height: $sizeTimer;
+		clip: rect(0px, $sizeTimer, $sizeTimer, ($sizeTimer / 2));
+
+		&.nc {
+			clip: rect(auto, auto, auto, auto);
+		}
+
+		.q {
+			position: absolute;
+			width: ($sizeTimer - $borderWidth * 2);
+			height: ($sizeTimer - $borderWidth * 2);
+			border: ($borderWidth + 1) $backgroundTimerColor solid;
+			border-radius: 50%;
+			clip: rect(0px, ($sizeTimer / 2), ($sizeTimer / 2), 0px);
+			z-index: 2;
+		}
+
+		.pie {
+			border: $borderWidth $radialBarColor solid;
+			position: absolute;
+			width: ($sizeTimer - $borderWidth * 2);
+			height: ($sizeTimer - $borderWidth * 2);
+			clip: rect(0px, ($sizeTimer / 2), $sizeTimer, 0px);
+			border-radius: 50%;
+			transition: all 1s linear;
+			z-index: 1;
+		}
+	}
+}
