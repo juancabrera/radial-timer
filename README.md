@@ -11,7 +11,7 @@ A Javascript method that creates a CSS radial timer/countdown with progress bar.
 ```javascript
 var Timer;
 Timer = new radialTimer();
-Timer.init("timer", 20); // set the timer with 20 seconds
+Timer.init("timer", 20);
 ```
 The first element is the container id where it will place the timer and the second one is the number of seconds that the timer will count.
 ### Build
