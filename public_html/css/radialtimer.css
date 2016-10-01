@@ -50,5 +50,6 @@
   clip: rect(0px, 100px, 200px, 0px);
   border-radius: 50%;
   transition: all 1s linear;
+  box-sizing: content-box;
   z-index: 1;
 }
